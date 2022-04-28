@@ -19,7 +19,7 @@
 }
 
 .ex-5-square:active{
-    transform: scale(-0.5, -0.5);
+    transform: scale(0.5, 0.5);
 }
 
 .ex-6-img:hover{
@@ -27,5 +27,41 @@
 }
 
 .ex-7-img:hover{
+    filter: grayscale(60%);
     filter: sepia(60%);
+}
+
+.ex-8-img:hover{
+    border-radius: 20px;
+    filter: grayscale(80%);
+    filter: sepia(60%);
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5,1.5);
+    border-radius: 20px;
+    filter: grayscale(80%); 
+    filter: sepia(60%);
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: spin 2s linear;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(310deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }

@@ -37,14 +37,19 @@
     transition: all 1s;
 }
 
-
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
 .ex-10-icon {
     font-size: 60px;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
 .ex-11-icon {
     font-size: 60px;
 }
