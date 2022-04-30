@@ -44,6 +44,7 @@
     filter: sepia(60%);
 }
 
+/* eser 10 */
 @keyframes loading{
     0%{
         transform: rotate(-360deg);
@@ -65,3 +66,38 @@
         transform: rotate(0);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: moveTop linear 2s;
+}
+
+@keyframes moveTop{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moveBottom linear 2s;
+}
+
+
+@keyframes moveBottom{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+
